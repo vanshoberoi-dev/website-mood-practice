@@ -66,6 +66,58 @@ section {
   padding-top: 7rem;
 }
 
+.hero-chef {
+    position: relative;
+    z-index: 1;
+    width: 100% !important;
+    max-width: 600px !important;
+    height: auto;
+}
+.hero-right-col{
+  padding-top: 6rem;
+}
+.hero-right-col img:not(.hero-chef) {
+    position: absolute;
+    height: auto;
+    pointer-events: none;
+}
+.shape-nougat {
+    width: 15%;
+    top: 10%;
+    left: 15%;
+    z-index: 2;
+}
+.shape-pie {
+    width: 13%;
+    top: 20%;
+    right: 2%;
+    z-index: 2;
+}
+
+.shape-donut {
+    width: 12%;
+    bottom: -10%;
+    left: 17%;
+    z-index: 2;
+}
+.calendar-card {
+    position: absolute;
+    top: 69%;
+    width: 73%;
+    bottom: 0%;
+    right: -20%;
+    z-index: 3;
+}
+
+.line-left { width: 28%; top: 20%; left: 23%; z-index: 0; }
+.line-right { width: 40%; top: 24%; right: 1%; z-index: 0; }
+.line-bottom { width: 60%; bottom: -5%; left: 27%; z-index: 0; }
+
+@media (max-width: 768px) {
+    .hero-right-col {
+        margin-top: 2rem;
+    }
+}
 
 /* services holder */
 .services-hld {
