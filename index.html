@@ -23,13 +23,39 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Mood Website</title>
+    <title>Mood Desert Indonesia | Enjoy Your Healthy Dessert</title>
+    <meta name="title" content="Mood Desert Indonesia | Enjoy Your Healthy Dessert">
+    <meta name="description"
+        content="Custom healthy desserts for special events. Enjoy our cupcakes, fruit cream, and fruit cakes with 50% off during happy hour. Healthy treats for every mood.">
+    <meta name="keywords"
+        content="healthy dessert Indonesia, custom cupcakes, fruit cake Jakarta, healthy sweets, mood desert, fruit cream dessert">
+    <meta name="author" content="Vansh Oberoi">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanshoberoi-dev.github.io/website-mood-practice/">
+    <meta property="og:title" content="Mood Desert Indonesia | Healthy & Delicious">
+    <meta property="og:description"
+        content="Order custom healthy desserts for your special occasions. Explore our menu of cupcakes and fresh fruit treats.">
+    <meta property="og:image" content="https://vanshoberoi-dev.github.io/website-mood-practice/assets/header/logo.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vanshoberoi-dev.github.io/website-mood-practice/">
+    <meta property="twitter:title" content="Mood Desert Indonesia | Healthy & Delicious">
+    <meta property="twitter:description"
+        content="Order custom healthy desserts for your special occasions. Explore our menu of cupcakes and fresh fruit treats.">
+    <meta property="twitter:image"
+        content="https://vanshoberoi-dev.github.io/website-mood-practice/assets/header/logo.png">
+
+    <meta name="theme-color" content="#F8F7F3">
     <link rel="icon" href="assets/header/logo.png" type="image/x-icon">
+
+    <!-- Animate on Scroll CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <!-- header section -->
-    <header class="header-hld sticky-top py-1" style="background-color:#F8F7F3;">
+    <header class="header-hld fixed-top py-1" style="background-color:#F8F7F3;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-4 col-md-3">
@@ -69,20 +95,24 @@
     </header>
 
     <!-- hero section -->
-    <section class="hero-hld py-5"
-        style="background-color:#F8F7F3; min-height: 80vh; display: flex; align-items: center;">
+    <section class="hero-hld"
+        style="background-color:#F8F7F3; display: flex; align-items: center; justify-content: center;">
         <div class="container">
+
             <div class="row align-items-center">
-                <div class="col-12 col-md-6 order-2 order-md-1 mt-5 mt-md-0 text-center text-md-start">
-                    <img src="assets/hero/curve.png" alt="Curve" class="img-fluid mb-4" style="max-width: 150px;" />
+                <section class="col-12 col-md-6 position-relative order-1 order-md-1 mt-2 mt-md-0 text-center text-md-start">
+                    <img src="assets/hero/curve.png" alt="Curve" class="img-fluid mb-4"
+                        style="width: 25%; min-width: 30px; max-width: 60px;" />
 
                     <article>
-                        <h1 class="fw-bold responsive-h1 mb-3" style="color:#F57148; line-height: 1.1;">
+                        <h1 class="fw-bold responsive-h1 mb-3" data-aos="fade-right" data-aos-delay="300"
+                            style="color:#F57148; line-height: 1.1;">
                             Enjoy Your <br>
                             <span class="fw-light" style="color:#F57148;">Healthy Desert</span>
                         </h1>
 
-                        <p class="fs-5 mb-4 mx-auto mx-md-0" style="max-width: 450px;">
+                        <p class="fs-5 mb-4 mx-auto mx-md-0 py-4 py-md-4" style="max-width: 450px;" data-aos="fade-right"
+                            data-aos-delay="400">
                             Lorem ipsum dolor sit amet consectetur. Sit mattis donec mi bibendum
                             integer rutrum nisi. A nec nisl vitae
                         </p>
@@ -90,39 +120,36 @@
 
                     <p class="small fw-bold text-dark mb-2">moodesertindonesia@gmail.com</p>
 
-                    <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-4 mt-3">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-4 mt-3"
+                        data-aos="fade-up" data-aos-delay="200">
                         <button class="btn btn-dark rounded-pill px-5 py-3">
                             Sign Up
                         </button>
                         <span class="fs-3 fw-thin">$40.00</span>
                     </div>
-                </div>
+                </section>
 
-                <div class="col-12 col-md-6 order-1 order-md-2 text-center">
-                    <img src="assets/hero/image.png" alt="Hero Image" class="img-fluid w-100"
+                <div class="col-12 col-md-6 order-2 order-md-2 text-center position-relative" data-aos="fade-left" data-aos-duration="1500" >
+                    <img src="assets/hero/image.png" alt="Hero Image" class="img-fluid w-100 hero-chef"
                         style="max-width: 600px;" />
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Section 1 - Services -->
     <section id='1' class="services-hld py-5">
-
-
         <div class="container">
-
             <!-- TOP CONTENT -->
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up">
 
                 <span class="text-uppercase small letter-spacing">
                     Services
                 </span>
-
                 <h2 class="fw-semibold mt-3">
                     Custom orders available for special<br>
                     events or occasions
                 </h2>
-
                 <button class="btn btn-dark rounded-pill px-4 py-2 mt-3">
                     Buy Now
                 </button>
@@ -130,7 +157,7 @@
             </div>
 
             <!-- PRODUCTS ROW -->
-            <div class="swiper foodSwiper">
+            <div class="swiper foodSwiper" data-aos="fade-up" data-aos-delay="200">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide food-card">
@@ -262,20 +289,19 @@
                 <span class="custom-next">&rarr;</span>
             </div>
         </div>
-        </div>
 
     </section>
 
     <!-- Section 2 -->
     <section id='2' class="section-two" style="background:#F8F7F3;">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row d-flex justify-content-center align-items-center">
 
-                <div class="col-12 col-md-6 position-relative text-center order-md-1 order-2">
+                <div class="col-12 col-md-6 position-relative text-center order-md-1 order-2" data-aos="fade-right">
                     <img src="assets/section2/image.png" alt="chef" class="img-fluid w-100" style="max-width: 600px;">
                 </div>
 
-                <div class="col-12 col-md-6 ps-md-5 order-md-2 order-1">
+                <section class="col-12 col-md-6 px-5 ps-md-5 order-md-2 order-1" data-aos="fade-left">
                     <p class="m-0 p-0" style="font-size:20px;">special with a discounted price</p>
                     <h2 class="fw-bold mt-0 mb-0 display-6">
                         Dessert of the day
@@ -292,67 +318,71 @@
                         Explore More &rarr;
                     </button>
 
-                </div>
+                </section>
 
             </div>
         </div>
     </section>
 
-    <!-- Section 3 -->
-    <section id="3" class="section-three">
+    <!-- Section 3 - Happy Hour -->
+    <section id="3" class="section-three position-relative">
         <div class="container">
             <div class="row align-items-center">
-
-                <div class="col-12 col-md-6 ps-md-5">
+                <section class="col-12 col-md-6" data-aos="fade-right">
                     <div class="happy-hour-box">
 
                         <p class="m-0 p-0" style="font-size:20px;">
                             Don't miss out on this sweet deal!
                         </p>
-
                         <h2 class="fw-bold mt-0 mb-0 display-6">
                             Join us for Happy Hour
                         </h2>
-
                         <h3 class="fw-normal pt-0 mt-0 mb-3" style="font-size: 30px;">
                             get 50% off all desserts!
                         </h3>
-
                         <p class="mt-2 mb-4" style="font-size:14px;">
                             Lorem ipsum dolor sit amet consectetur. Massa quis natoque sit quam.
                             Eros non pellentesque elit tortor id euismod habitant cras neque.
                             Sed suspendisse id in ultrices adipiscing.
                         </p>
-
                         <button class="btn btn-dark rounded-pill px-4 mt-3">
                             Explore More →
                         </button>
 
                     </div>
 
+                </section>
+                <div class="col-12 col-md-6 position-relative text-center" data-aos="fade-left">
+                    <img src="assets/section3/line2.png" class="line2" alt="" />
+                    <img src="assets/section3/Subtract-black.png" class="shape-black" alt="" />
+                    <img src="assets/section3/Subtract.png" class="shape-backdrop" alt="backdrop" />
+                    <img src="assets/section3/Subtract-green.png" class="shape-green-backdrop" alt="backdrop" />
+                    <img src="assets/section3/image.png" class="chef-img img-fluid w-100" style="max-width:600px;" />
+                    <img src="assets/section3/card.png" class="get-50-badge" alt="Get 50% off" />
                 </div>
-                <div class="col-12 col-md-6 position-relative text-center">
-                    <img src="assets/section3/image.png" class="img-fluid" style="min-width: 38vw; min-height: 38vw;" />
-                </div>
-
-
-
+            </div>
+        </div>
     </section>
 
     <!-- Section 4 - Follow Us -->
     <section id='4' class="follow-hld" style="background-color:#F8F7F3;">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-12 col-md-6 order-2 order-md-1">
+                <div class="col-12 col-md-6 order-2 order-md-1" data-aos="zoom-in">
                     <img src="assets/section4/image.png" alt="Justin Lipshutz" class="img-fluid w-100"
                         style="max-width: 600px;" />
                 </div>
-                <section class="col-12 col-md-6 ps-5 order-1 order-md-2">
+                <section class="col-12 col-md-6 px-5 order-1 order-md-2" data-aos="fade-up">
+                    <img src="assets/section4/curve.png" alt="Curve"
+                        class="img-fluid mb-4 d-block ms-auto me-0 me-md-3 me-lg-5 me-xxl-5"
+                        style="width: 25%; min-width: 30px; max-width: 60px;" />
+
                     <p class="mb-1">Lorem ipsum dolor</p>
                     <h2 class="fw-bold mb-2">Follow us on social media</h2>
                     <p class="text-secondary mb-3">get access to exclusive discounts.</p>
 
-                    <ul class="mb-4" style="list-style-type: disc; padding-left: 1.5rem;">
+                    <ul class="mb-4" style="list-style-type: disc; padding-left: 1.5rem;" data-aos="fade-up"
+                        data-aos-delay="200">
                         <li class="mb-2">Lorem ipsum dolor sit amet</li>
                         <li class="mb-2">Massa quis natoque sit quam</li>
                         <li class="mb-2">Eros non pellentesque elit</li>
@@ -377,12 +407,12 @@
         <div class="container mx-auto">
             <div class="row pb-md-5">
 
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <h3 class="footer-header">About</h3>
                     <p class="about-text">is a showcase of the finest web and interactive design.</p>
                 </div>
 
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 offset-md-1" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="footer-header">Product</h3>
                     <ul class="footer-links">
                         <li><a href="#">Landing Page</a></li>
@@ -393,7 +423,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="footer-header">Use Cases</h3>
                     <ul class="footer-links">
                         <li><a href="#">Web-designers</a></li>
@@ -403,7 +433,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <h3 class="footer-header">Contact us</h3>
                     <form id="contactForm" class="contact-form" action="#" method="POST">
                         <div class="mb-3">
@@ -459,6 +489,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/script.js"></script>
+
+    <!-- AOS (Animate on Scroll) JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
