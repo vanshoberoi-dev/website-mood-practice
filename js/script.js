@@ -30,7 +30,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   event.preventDefault();
   const btn = document.querySelector('.submit-btn');
   btn.innerText = 'Sent!';
-  btn.style.backgroundColor = '#F57148';
+  btn.style.backgroundColor = '#DCD559';
 
   setTimeout(() => {
     btn.innerText = 'Submit';

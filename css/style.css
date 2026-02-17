@@ -29,6 +29,8 @@ section {
   padding: 8px;
   margin: 0px;
   padding-left: 25px;
+  background-color: rgba(248, 247, 243, 0.4) !important;
+  backdrop-filter: blur(10px);
 }
 
 .logo img {
@@ -202,7 +204,7 @@ button:focus {
     position: absolute;
     bottom: -2px;
     right: 4%;
-    transform: rotate(6deg);
+    transform: rotate(1deg);
     z-index: -1;
     width: 75%;
     height: auto;
