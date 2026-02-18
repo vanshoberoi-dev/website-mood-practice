@@ -40,6 +40,10 @@ section {
   height: 54px;
 }
 
+.logo-img {
+  max-height: 50px;
+}
+
 .responsive-h1 {
   font-size: clamp(2.5rem, 8vw, 4rem);
 }
@@ -66,17 +70,19 @@ button:focus {
   outline: none !important;
 }
 
-.section-two .btn {
-  color: #F8F7F3;
-}
-
 /* hero css */
 .hero-hld {
   padding-top: 7rem;
+  background-color: #F8F7F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .hero-hld article h1 {
   line-height: 4.3rem;
+  color: #F57148;
 
 }
 
@@ -90,6 +96,12 @@ button:focus {
 
 .hero-hld p {
   font-size: 1rem;
+}
+
+.curve-img {
+  width: 25%;
+  min-width: 30px;
+  max-width: 60px;
 }
 
 /* services holder */
@@ -186,6 +198,27 @@ button:focus {
   opacity: .4;
 }
 
+/* Section Two */
+.section-two {
+  background: #F8F7F3;
+}
+
+.section-two .btn {
+  color: #F8F7F3;
+}
+
+.section-subtitle {
+  font-size: 20px;
+}
+
+.section-subheading {
+  font-size: 30px;
+}
+
+.section-body-text {
+  font-size: 14px;
+}
+
 /* section three */
 .section-three {
   background: url('../assets/section3/line.png') 0% top / 31% 50% no-repeat;
@@ -248,6 +281,15 @@ button:focus {
   pointer-events: none;
 }
 
+/* Follow Holder */
+.follow-hld {
+  background-color: #F8F7F3;
+}
+
+.follow-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
 
 /* footer */
 
@@ -358,16 +400,23 @@ footer .row {
 /* media queries */
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #F8F7F3;
+    background: #F8F7F3 !important;
     position: absolute;
     top: 100%;
-    background: rgba(248, 247, 243, 0.8) !important;
-    backdrop-filter: blur(10px);
     right: 0;
     padding: 20px;
     border-radius: 15px;
     margin-top: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-collapse .nav-link {
+    display: block !important;
+  }
+
+  .navbar-collapse .nav-link:hover {
+    color: #f47524 !important;
+    border-radius: 4px;
   }
 
   .hero-hld article h1 {
